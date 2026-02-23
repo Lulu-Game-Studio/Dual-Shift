@@ -212,21 +212,20 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8u7et"]
-radius = 33.0
-height = 110.0
+height = 40.0
 
 [node name="Wilson" type="CharacterBody2D" unique_id=112929536]
 script = ExtResource("1_8fega")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=427607657]
 texture_filter = 1
-position = Vector2(1.0000038, -75)
-scale = Vector2(7.947266, 6.236328)
+position = Vector2(2.710935, 4.8046904)
+scale = Vector2(2.1430666, 2.012207)
 sprite_frames = SubResource("SpriteFrames_8m82d")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.49555883
+frame_progress = 0.20889452
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1488287736]
-position = Vector2(-3, -55)
+position = Vector2(2, 10)
 shape = SubResource("CapsuleShape2D_8u7et")
