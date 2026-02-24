@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://c0odl2oltojjs"]
+
+[ext_resource type="Texture2D" uid="uid://cg11numitsev6" path="res://Assets/Decoration/orig_big.png" id="1_qyyw6"]
+[ext_resource type="Script" uid="uid://cxtqosdcdlddh" path="res://Script/options.gd" id="1_ww8vx"]
+[ext_resource type="FontFile" uid="uid://cj0fy1dc0vqlq" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_ww8vx"]
+[ext_resource type="FontFile" uid="uid://cv4d188et3whd" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_kftxf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_663nc"]
+bg_color = Color(0, 0, 0, 0.59607846)
+
+[node name="Options" type="Control" unique_id=1285052697]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ww8vx")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1873111796]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1551741537]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qyyw6")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="." unique_id=81002221]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -190.5
+offset_top = 58.0
+offset_right = 190.5
+offset_bottom = 109.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_ww8vx")
+theme_override_font_sizes/font_size = 55
+text = "Controls"
+
+[node name="Back" type="Button" parent="." unique_id=1548535603]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.5
+offset_top = 98.0
+offset_right = 125.5
+offset_bottom = 184.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_kftxf")
+theme_override_font_sizes/font_size = 45
+text = "Back"
+
+[node name="Label2" type="Label" parent="." unique_id=870952790]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -248.5
+offset_top = -136.5
+offset_right = 248.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_kftxf")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxFlat_663nc")
+text = "
+Move: A-D / Arrows
+Jump: Space/W
+Swap Character: Tab/Q
+Interact: E
+"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
