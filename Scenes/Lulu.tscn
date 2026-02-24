@@ -254,9 +254,9 @@ script = ExtResource("1_gsh14")
 position = Vector2(0, 1)
 scale = Vector2(0.2734375, 0.28125)
 sprite_frames = SubResource("SpriteFrames_re835")
-animation = &"Idle"
+animation = &"Bark"
 autoplay = "Idle"
-frame_progress = 0.15269853
+frame_progress = 0.309866
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=263334839]
 position = Vector2(0, 6)
