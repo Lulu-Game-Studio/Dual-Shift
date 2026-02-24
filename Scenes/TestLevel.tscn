@@ -1,8 +1,8 @@
-[gd_scene format=4 uid="uid://cyg2mb6ntjymb"]
+[gd_scene format=4 uid="uid://bhtlbviqr3lxc"]
 
 [ext_resource type="Texture2D" uid="uid://dp814ucdjc6b5" path="res://Assets/Decoration/world_tileset.png" id="1_5ms4e"]
-[ext_resource type="Script" uid="uid://c1l643ylwkc31" path="res://Scenes/Swap.gd" id="1_ujyaq"]
-[ext_resource type="PackedScene" uid="uid://drsshqa2e4hvk" path="res://Scenes/Lulu.tscn" id="2_shgkq"]
+[ext_resource type="Script" uid="uid://c1l643ylwkc31" path="res://Script/Swap.gd" id="1_ujyaq"]
+[ext_resource type="PackedScene" uid="uid://drsshqa2e4hvk" path="res://Scenes/lulu.tscn" id="2_shgkq"]
 [ext_resource type="PackedScene" uid="uid://dmviqwfdvjfv2" path="res://Scenes/wilson.tscn" id="3_shgkq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1jsw"]
@@ -287,10 +287,5 @@ tile_set = SubResource("TileSet_waekl")
 [node name="Lulu" parent="." unique_id=1486883570 instance=ExtResource("2_shgkq")]
 position = Vector2(461, 492)
 
-[node name="Camera2D" type="Camera2D" parent="Lulu" unique_id=906955432]
-
 [node name="Wilson" parent="." unique_id=112929536 instance=ExtResource("3_shgkq")]
 position = Vector2(684, 479)
-
-[node name="Camera2D" type="Camera2D" parent="Wilson" unique_id=192271053]
-visible = false

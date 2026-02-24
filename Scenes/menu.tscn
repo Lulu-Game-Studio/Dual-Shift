@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bhit7ikjhomco"]
+[gd_scene format=3 uid="uid://bkt7fh47m4yq6"]
 
 [ext_resource type="Script" uid="uid://dvesyutyao5sn" path="res://Script/menu.gd" id="1_cayip"]
 [ext_resource type="Texture2D" uid="uid://cg11numitsev6" path="res://Assets/Decoration/orig_big.png" id="1_cgmvo"]
@@ -83,4 +83,5 @@ theme_override_fonts/font = ExtResource("2_vh8u0")
 theme_override_font_sizes/font_size = 50
 text = "DualShift"
 
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]
