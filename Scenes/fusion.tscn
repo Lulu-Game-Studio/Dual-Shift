@@ -305,7 +305,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_orgyv"]
-size = Vector2(87, 150)
+size = Vector2(87, 132)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_51d1c"]
 size = Vector2(59, 99.5)
@@ -327,7 +327,7 @@ sprite_frames = SubResource("SpriteFrames_re835")
 animation = &"JumpSprite"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=263334839]
-position = Vector2(-19.999998, 13.500001)
+position = Vector2(-28.999998, 13.500001)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_orgyv")
 
