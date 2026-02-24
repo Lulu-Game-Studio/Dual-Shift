@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="DualShift"
+run/main_scene="uid://bkt7fh47m4yq6"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
 
 [input]
 

@@ -212,7 +212,10 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8u7et"]
-height = 40.0
+height = 36.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8fega"]
+size = Vector2(15.5, 4)
 
 [node name="Wilson" type="CharacterBody2D" unique_id=112929536]
 script = ExtResource("1_8fega")
@@ -224,8 +227,21 @@ scale = Vector2(2.1430666, 2.012207)
 sprite_frames = SubResource("SpriteFrames_8m82d")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.20889452
+frame_progress = 0.2706194
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1488287736]
 position = Vector2(2, 10)
 shape = SubResource("CapsuleShape2D_8u7et")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=960861902]
+position = Vector2(1, 26)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1307915998]
+position = Vector2(0.75, 1)
+shape = SubResource("RectangleShape2D_8fega")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=815666433]
+position_smoothing_enabled = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
