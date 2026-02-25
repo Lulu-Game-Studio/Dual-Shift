@@ -248,6 +248,7 @@ radius = 1.0
 height = 32.0
 
 [node name="Lulu" type="CharacterBody2D" unique_id=1486883570 groups=["Lulu"]]
+collision_mask = 3
 script = ExtResource("1_gsh14")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=590653910]
@@ -272,6 +273,7 @@ shape = SubResource("CapsuleShape2D_dq8mg")
 debug_color = Color(0.7912617, 0.3084795, 0.75273734, 0.41960785)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=830624547]
+visibility_layer = 3
 limit_left = 0
 limit_top = 0
 limit_right = 1152
