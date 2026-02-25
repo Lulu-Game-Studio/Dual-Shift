@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://caejcywjmi5p6"]
+
+[ext_resource type="Texture2D" uid="uid://dp814ucdjc6b5" path="res://Assets/Decoration/world_tileset.png" id="1_ifyul"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8h2q1"]
+size = Vector2(14, 89)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=666646630]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1613979450]
+texture = ExtResource("1_ifyul")
+region_enabled = true
+region_rect = Rect2(95.842285, 16.45266, 16.010544, 15.626053)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1755046055]
+position = Vector2(0, -15)
+texture = ExtResource("1_ifyul")
+region_enabled = true
+region_rect = Rect2(95.842285, 16.45266, 16.010544, 15.626053)
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=832351283]
+position = Vector2(0, -75)
+texture = ExtResource("1_ifyul")
+region_enabled = true
+region_rect = Rect2(95.842285, 16.45266, 16.010544, 15.626053)
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=1420279317]
+position = Vector2(0, -60)
+texture = ExtResource("1_ifyul")
+region_enabled = true
+region_rect = Rect2(95.842285, 16.45266, 16.010544, 15.626053)
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1085454736]
+position = Vector2(0, -45)
+texture = ExtResource("1_ifyul")
+region_enabled = true
+region_rect = Rect2(95.842285, 16.45266, 16.010544, 15.626053)
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=535453530]
+position = Vector2(0, -30)
+texture = ExtResource("1_ifyul")
+region_enabled = true
+region_rect = Rect2(95.842285, 16.45266, 16.010544, 15.626053)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=994781897]
+position = Vector2(0, -37.5)
+shape = SubResource("RectangleShape2D_8h2q1")

@@ -20,13 +20,26 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 	else:
-		velocity.x = move_toward(velocity.x,0,SPEED)
+		velocity.x = move_toward(velocity.x, 0, SPEED)
 			
 	move_and_slide()
+
+	update_animations()
 
 	if Input.is_action_just_pressed("Interact"):
 		if lulu_nearby:
 			transform_now()
+
+func update_animations():
+	if not is_on_floor():
+		if velocity.y > 0:
+			$AnimatedSprite2D.play("fall")
+		else:
+			$AnimatedSprite2D.play("jump")
+	elif velocity.x != 0:
+		$AnimatedSprite2D.play("run")
+	else:
+		$AnimatedSprite2D.play("idle")
 
 func transform_now():
 	if get_parent().has_node("Fusion"): 

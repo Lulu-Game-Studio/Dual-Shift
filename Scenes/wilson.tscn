@@ -217,7 +217,8 @@ height = 36.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8fega"]
 size = Vector2(15.5, 4)
 
-[node name="Wilson" type="CharacterBody2D" unique_id=112929536]
+[node name="Wilson" type="CharacterBody2D" unique_id=112929536 groups=["Wilson"]]
+collision_mask = 3
 script = ExtResource("1_8fega")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=427607657]

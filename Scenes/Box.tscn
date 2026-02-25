@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://d01x8emu410uq"]
+
+[ext_resource type="Texture2D" uid="uid://dp814ucdjc6b5" path="res://Assets/Decoration/world_tileset.png" id="1_8s0t8"]
+[ext_resource type="Script" uid="uid://cpy168got4m1" path="res://Script/box.gd" id="1_42nxc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_42nxc"]
+size = Vector2(29, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mckbn"]
+size = Vector2(30.5, 3)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1600601202]
+lock_rotation = true
+freeze = true
+contact_monitor = true
+max_contacts_reported = 5
+linear_damp = 5.0
+script = ExtResource("1_42nxc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=710417285]
+position = Vector2(7.5, -7)
+scale = Vector2(2.0714285, 2)
+texture = ExtResource("1_8s0t8")
+region_enabled = true
+region_rect = Rect2(112.50578, 48.641098, 14.80304, 14.844967)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1088900707]
+position = Vector2(7.5, -7)
+shape = SubResource("RectangleShape2D_42nxc")
+debug_color = Color(0.8374663, 0.3867298, 0, 0.41960785)
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1857433041]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1032822395]
+position = Vector2(7.5, -19.5)
+shape = SubResource("RectangleShape2D_mckbn")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=313682449]
+position = Vector2(7.75, 6)
+shape = SubResource("RectangleShape2D_mckbn")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

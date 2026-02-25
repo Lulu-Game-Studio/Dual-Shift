@@ -5,6 +5,8 @@ const JUMP_VELOCITY = -300.0
 var is_active = true
 var wilson_nearby = false 
 
+@export var push_force = 500.0 
+
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -20,13 +22,32 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 	else:
-		velocity.x = move_toward(velocity.x,0,SPEED)
+		velocity.x = move_toward(velocity.x, 0, SPEED)
 			
 	move_and_slide()
-
+	
+	update_animations()
+	
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var body = collision.get_collider()
+		
+		if body is RigidBody2D:
+			if body.freeze:
+				body.freeze = false
+			body.apply_central_impulse(collision.get_normal() * -push_force)
+	
 	if Input.is_action_just_pressed("Interact"):
 		if wilson_nearby:
 			transform_now()
+
+func update_animations():
+	if not is_on_floor():
+		$AnimatedSprite2D.play("JumpSprite")
+	elif velocity.x != 0:
+		$AnimatedSprite2D.play("Walk")
+	else:
+		$AnimatedSprite2D.play("Idle")
 
 func transform_now():
 	if get_parent().has_node("Fusion"): 
