@@ -6,10 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://d01x8emu410uq" path="res://Scenes/Box.tscn" id="3_hn12h"]
 [ext_resource type="PackedScene" uid="uid://caejcywjmi5p6" path="res://Scenes/SpecialWall.tscn" id="4_ihfcg"]
 [ext_resource type="PackedScene" uid="uid://dmviqwfdvjfv2" path="res://Scenes/wilson.tscn" id="5_rka8t"]
-[ext_resource type="PackedScene" uid="uid://lnwcej2048ua" path="res://Scenes/button.tscn" id="7_lsmp6"]
+[ext_resource type="PackedScene" path="res://Scenes/button.tscn" id="7_lsmp6"]
 [ext_resource type="Texture2D" uid="uid://dqx7ucm1jhgvs" path="res://Assets/Items/buttonRed.png" id="8_wrinw"]
 [ext_resource type="Texture2D" uid="uid://go14vhqveaml" path="res://Assets/Items/buttonRed_pressed.png" id="9_chwpn"]
-[ext_resource type="PackedScene" uid="uid://ch1wqn8mewjit" path="res://Scenes/blocker.tscn" id="10_chwpn"]
+[ext_resource type="PackedScene" path="res://Scenes/blocker.tscn" id="10_chwpn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ihfcg"]
 texture = ExtResource("1_hbghi")
@@ -301,7 +301,8 @@ position = Vector2(708, 112)
 position = Vector2(899, 513)
 
 [node name="blocker3" parent="." unique_id=381481838 instance=ExtResource("10_chwpn")]
-position = Vector2(491, 466)
+position = Vector2(493, 478)
+scale = Vector2(1.2, 1.2)
 
 [node name="Ground" type="TileMapLayer" parent="." unique_id=29947542]
 texture_filter = 1
