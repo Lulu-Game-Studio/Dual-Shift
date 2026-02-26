@@ -18,5 +18,5 @@ func _physics_process(_delta):
 			pass
 			
 	if freeze == false:
-		linear_damp = 15.0 
-		gravity_scale = 6.0
+		linear_damp = 30.0 
+		gravity_scale = 8.0

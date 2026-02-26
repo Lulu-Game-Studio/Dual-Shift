@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://lnwcej2048ua"]
+
+[ext_resource type="Script" uid="uid://r6t7klww0y5y" path="res://Script/button.gd" id="1_0kpiu"]
+[ext_resource type="Texture2D" uid="uid://dqx7ucm1jhgvs" path="res://Assets/Items/buttonRed.png" id="2_smycg"]
+[ext_resource type="Texture2D" uid="uid://go14vhqveaml" path="res://Assets/Items/buttonRed_pressed.png" id="3_smycg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iju5o"]
+size = Vector2(26, 17)
+
+[node name="button" type="Area2D" unique_id=1008820760]
+position = Vector2(21, 0)
+script = ExtResource("1_0kpiu")
+imagen_normal = ExtResource("2_smycg")
+imagen_presionado = ExtResource("3_smycg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1906126467]
+position = Vector2(-21, -13)
+scale = Vector2(0.37142858, 0.37142858)
+texture = ExtResource("2_smycg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=72788187]
+position = Vector2(-21, -8.5)
+shape = SubResource("RectangleShape2D_iju5o")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
