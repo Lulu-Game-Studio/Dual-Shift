@@ -49,7 +49,7 @@ func transform_now():
 	fusion.global_position = global_position 
 	
 	get_parent().add_child(fusion)
-	var lulu = get_parent().find_child("Lulu", true, false)
+	var lulu = get_tree().get_first_node_in_group("Lulu")
 	if lulu:
 		lulu.queue_free()
 	

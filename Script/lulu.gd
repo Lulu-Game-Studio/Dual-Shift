@@ -57,7 +57,7 @@ func transform_now():
 	fusion.global_position = global_position 
 	
 	get_parent().add_child(fusion)
-	var wilson = get_parent().find_child("Wilson", true, false)
+	var wilson = get_tree().get_first_node_in_group("Wilson")
 	if wilson:
 		wilson.queue_free()
 	

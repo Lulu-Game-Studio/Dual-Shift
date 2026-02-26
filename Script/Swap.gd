@@ -11,8 +11,8 @@ func _input(event):
 		update_characters()
 
 func update_characters():
-	var lulu = get_tree().current_scene.find_child("Lulu",true,false)
-	var wilson = get_tree().current_scene.find_child("Wilson", true, false)
+	var lulu = get_tree().get_first_node_in_group("Lulu")
+	var wilson = get_tree().get_first_node_in_group("Wilson")
 	
 	if lulu:
 		lulu.is_active = lulu_is_active
