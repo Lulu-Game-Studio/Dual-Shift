@@ -5,4 +5,4 @@ func _on_options_pressed() -> void:
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/TestLevel.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Tutorial.tscn")

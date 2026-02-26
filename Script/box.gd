@@ -4,7 +4,7 @@ func _ready():
 	lock_rotation = true
 	freeze = true
 	contact_monitor = true
-	
+	max_contacts_reported = 5 
 	can_sleep = false 
 
 func _physics_process(_delta):
@@ -16,3 +16,7 @@ func _physics_process(_delta):
 				freeze = false
 		else:
 			pass
+			
+	if freeze == false:
+		linear_damp = 30.0 
+		gravity_scale = 8.0
