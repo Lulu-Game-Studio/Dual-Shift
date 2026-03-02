@@ -10,9 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dqx7ucm1jhgvs" path="res://Assets/Items/buttonRed.png" id="8_wrinw"]
 [ext_resource type="Texture2D" uid="uid://go14vhqveaml" path="res://Assets/Items/buttonRed_pressed.png" id="9_chwpn"]
 [ext_resource type="PackedScene" uid="uid://ch1wqn8mewjit" path="res://Scenes/blocker.tscn" id="10_chwpn"]
-[ext_resource type="Script" path="res://Script/level2door.gd" id="11_uy8f0"]
+[ext_resource type="Script" uid="uid://fbi33dtj4ana" path="res://Script/level2door.gd" id="11_uy8f0"]
 [ext_resource type="Texture2D" uid="uid://c1lkpfh2xf338" path="res://Assets/Decoration/0f4217a9-eb22-4a6c-a379-5eb8caef7c89-removebg-preview.png" id="12_6r07y"]
 [ext_resource type="AudioStream" uid="uid://8662iepfa7mw" path="res://Music/The Whole Other - 8-Bit Dreamscape ♫ NO COPYRIGHT 8-bit Music [KvDcTXEfdVs].mp3" id="13_6r07y"]
+[ext_resource type="PackedScene" uid="uid://bhit7ikjhomco" path="res://Scenes/pause.tscn" id="14_6ioyp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ihfcg"]
 texture = ExtResource("1_hbghi")
@@ -362,6 +363,10 @@ shape = SubResource("RectangleShape2D_6ioyp")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=605904772]
 stream = ExtResource("13_6r07y")
 autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=886753124]
+
+[node name="Pause" parent="CanvasLayer" unique_id=1435016436 instance=ExtResource("14_6ioyp")]
 
 [connection signal="actived" from="button" to="blocker" method="_on_button_actived"]
 [connection signal="disabled" from="button" to="blocker" method="_on_button_disabled"]
