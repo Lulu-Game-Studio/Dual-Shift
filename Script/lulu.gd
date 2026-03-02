@@ -66,6 +66,7 @@ func transform_now():
 		wilson.queue_free()
 	
 	queue_free()
+	
 func reset_to_start():
 	global_position = starting_position
 	velocity = Vector2.ZERO

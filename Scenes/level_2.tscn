@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dqx7ucm1jhgvs" path="res://Assets/Items/buttonRed.png" id="9_42uki"]
 [ext_resource type="Texture2D" uid="uid://go14vhqveaml" path="res://Assets/Items/buttonRed_pressed.png" id="10_t7v2y"]
 [ext_resource type="PackedScene" uid="uid://3oyo44krinhb" path="res://Scenes/spikes.tscn" id="11_t7v2y"]
+[ext_resource type="PackedScene" uid="uid://daw1mkvj8gksm" path="res://Scenes/lava.tscn" id="12_ait6c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_smnlx"]
 texture = ExtResource("1_v3rpw")
@@ -416,6 +417,21 @@ linear_damp = 20.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GravityZone" unique_id=736211212]
 position = Vector2(576, 243)
 shape = SubResource("RectangleShape2D_t7v2y")
+
+[node name="LavaKillZone" parent="." unique_id=1144039077 instance=ExtResource("12_ait6c")]
+position = Vector2(402, 614)
+
+[node name="LavaKillZone2" parent="." unique_id=1791209222 instance=ExtResource("12_ait6c")]
+position = Vector2(530, 616)
+
+[node name="LavaKillZone3" parent="." unique_id=363648357 instance=ExtResource("12_ait6c")]
+position = Vector2(778, 390)
+
+[node name="LavaKillZone4" parent="." unique_id=104144594 instance=ExtResource("12_ait6c")]
+position = Vector2(856, 391)
+
+[node name="LavaKillZone5" parent="." unique_id=1639899796 instance=ExtResource("12_ait6c")]
+position = Vector2(241, 614)
 
 [connection signal="actived" from="button" to="blocker" method="_on_button_actived"]
 [connection signal="disabled" from="button" to="blocker" method="_on_button_disabled"]
