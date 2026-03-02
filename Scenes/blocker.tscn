@@ -68,6 +68,7 @@ _data = {
 }
 
 [node name="blocker" type="StaticBody2D" unique_id=246963624]
+texture_filter = 1
 position = Vector2(6, 0)
 script = ExtResource("1_gvv4h")
 

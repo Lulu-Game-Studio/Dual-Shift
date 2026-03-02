@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://dqx7ucm1jhgvs" path="res://Assets/Items/buttonRed.png" id="8_wrinw"]
 [ext_resource type="Texture2D" uid="uid://go14vhqveaml" path="res://Assets/Items/buttonRed_pressed.png" id="9_chwpn"]
 [ext_resource type="PackedScene" uid="uid://ch1wqn8mewjit" path="res://Scenes/blocker.tscn" id="10_chwpn"]
+[ext_resource type="Script" uid="uid://fbi33dtj4ana" path="res://Script/level2door.gd" id="11_uy8f0"]
+[ext_resource type="Texture2D" uid="uid://c1lkpfh2xf338" path="res://Assets/Decoration/0f4217a9-eb22-4a6c-a379-5eb8caef7c89-removebg-preview.png" id="12_6r07y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ihfcg"]
 texture = ExtResource("1_hbghi")
@@ -286,6 +288,9 @@ texture = ExtResource("1_hbghi")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_5hph3")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ioyp"]
+size = Vector2(48, 56)
+
 [node name="Level 1" type="Node2D" unique_id=262757477]
 script = ExtResource("1_5hph3")
 
@@ -340,9 +345,23 @@ scale = Vector2(1.43, 1.43)
 [node name="Wilson" parent="." unique_id=112929536 instance=ExtResource("5_rka8t")]
 position = Vector2(1070, 83)
 
+[node name="Door" type="Area2D" parent="." unique_id=1864208225]
+position = Vector2(598, 562)
+script = ExtResource("11_uy8f0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Door" unique_id=886833548]
+position = Vector2(-6.0000153, 1.2500339)
+scale = Vector2(0.123556584, 0.10503472)
+texture = ExtResource("12_6r07y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=991748838]
+position = Vector2(-6, 1)
+shape = SubResource("RectangleShape2D_6ioyp")
+
 [connection signal="actived" from="button" to="blocker" method="_on_button_actived"]
 [connection signal="disabled" from="button" to="blocker" method="_on_button_disabled"]
 [connection signal="actived" from="button2" to="blocker2" method="_on_button_2_actived"]
 [connection signal="disabled" from="button2" to="blocker2" method="_on_button_2_disabled"]
 [connection signal="actived" from="button3" to="blocker3" method="_on_button_3_actived"]
 [connection signal="disabled" from="button3" to="blocker3" method="_on_button_3_disabled"]
+[connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]
