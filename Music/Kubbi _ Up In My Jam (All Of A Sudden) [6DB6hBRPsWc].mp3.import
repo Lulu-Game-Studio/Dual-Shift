@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://p6aq26kjoiv0"
+path="res://.godot/imported/Kubbi _ Up In My Jam (All Of A Sudden) [6DB6hBRPsWc].mp3-d7d3b917ff1c4696d22fb2a739aeb584.mp3str"
+
+[deps]
+
+source_file="res://Music/Kubbi _ Up In My Jam (All Of A Sudden) [6DB6hBRPsWc].mp3"
+dest_files=["res://.godot/imported/Kubbi _ Up In My Jam (All Of A Sudden) [6DB6hBRPsWc].mp3-d7d3b917ff1c4696d22fb2a739aeb584.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

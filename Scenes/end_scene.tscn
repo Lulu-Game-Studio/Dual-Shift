@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bpdixbeuii8pf"]
+
+[ext_resource type="Script" path="res://Script/end_scene.gd" id="1_8jdvl"]
+[ext_resource type="Texture2D" uid="uid://brrwfisjoa3is" path="res://Assets/Decoration/sunsetintheswamp.png" id="1_fgb5u"]
+[ext_resource type="FontFile" uid="uid://cj0fy1dc0vqlq" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_8jdvl"]
+[ext_resource type="FontFile" uid="uid://cv4d188et3whd" path="res://Assets/Fonts/PixelOperator8.ttf" id="3_8p78e"]
+[ext_resource type="AudioStream" uid="uid://bec7qaa7p0w6g" path="res://Music/8 BIT Victory sound effect [LwZQvJrAZmE].mp3" id="5_8p78e"]
+
+[node name="EndScene" type="Control" unique_id=708450102]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8jdvl")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=559121118]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=380107095]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fgb5u")
+
+[node name="Label" type="Label" parent="." unique_id=10133727]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -520.0
+offset_top = -140.0
+offset_right = 520.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_8jdvl")
+theme_override_font_sizes/font_size = 160
+text = "THE END"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=409173209]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -186.5
+offset_top = -165.0
+offset_right = 186.5
+offset_bottom = -114.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1799158807]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8p78e")
+theme_override_font_sizes/font_size = 30
+text = "Go back to menu"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=819300657]
+stream = ExtResource("5_8p78e")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

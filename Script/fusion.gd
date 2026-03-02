@@ -2,6 +2,10 @@ extends CharacterBody2D
 
 const SPEED = 250.0 
 const JUMP_VELOCITY = -500.0
+var starting_position : Vector2 
+
+func _ready():
+	starting_position = global_position 
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -23,7 +27,6 @@ func _physics_process(delta):
 		separate()
 
 func separate():
-	
 	var wilson_inst=load("res://Scenes/wilson.tscn").instantiate()
 	var lulu_inst=load("res://Scenes/lulu.tscn").instantiate()
 	
@@ -44,3 +47,7 @@ func separate():
 		lulu_inst.get_node("Camera2D").make_current()
 	
 	queue_free()
+
+func reset_to_start():
+	global_position = starting_position
+	velocity = Vector2.ZERO

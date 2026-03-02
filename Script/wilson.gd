@@ -4,6 +4,10 @@ const SPEED = 250.0
 const JUMP_VELOCITY = -500.0
 var is_active = true
 var lulu_nearby = false 
+var starting_position : Vector2 
+
+func _ready():
+	starting_position = global_position 
 
 func _physics_process(delta):
 	if not is_on_floor():
@@ -54,6 +58,10 @@ func transform_now():
 		lulu.queue_free()
 	
 	queue_free()
+
+func reset_to_start():
+	global_position = starting_position
+	velocity = Vector2.ZERO
 
 func _on_area_2d_body_entered(body):
 	if body.name == "Lulu":

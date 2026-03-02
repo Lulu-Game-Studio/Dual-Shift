@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dvesyutyao5sn" path="res://Script/menu.gd" id="1_cayip"]
 [ext_resource type="Texture2D" uid="uid://cg11numitsev6" path="res://Assets/Decoration/orig_big.png" id="1_cgmvo"]
 [ext_resource type="FontFile" uid="uid://cj0fy1dc0vqlq" path="res://Assets/Fonts/PixelOperator8-Bold.ttf" id="2_vh8u0"]
+[ext_resource type="AudioStream" uid="uid://p6aq26kjoiv0" path="res://Music/Kubbi _ Up In My Jam (All Of A Sudden) [6DB6hBRPsWc].mp3" id="4_158mb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wpaqk"]
 bg_color = Color(0, 0, 0, 0.7176471)
@@ -82,6 +83,10 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_vh8u0")
 theme_override_font_sizes/font_size = 50
 text = "DualShift"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1967035814]
+stream = ExtResource("4_158mb")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]

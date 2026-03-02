@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://daw1mkvj8gksm"]
+
+[ext_resource type="Script" uid="uid://cp3j1wecsnog7" path="res://Script/lava.gd" id="1_mtm6w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6qmq"]
+size = Vector2(59, 23)
+
+[node name="LavaKillZone" type="Area2D" unique_id=1144039077]
+script = ExtResource("1_mtm6w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1836922129]
+position = Vector2(30.5, 13.5)
+shape = SubResource("RectangleShape2D_e6qmq")
+debug_color = Color(0.44498697, 0.05162786, 0.07692396, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
