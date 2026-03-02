@@ -12,8 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://go14vhqveaml" path="res://Assets/Items/buttonRed_pressed.png" id="10_t7v2y"]
 [ext_resource type="PackedScene" uid="uid://3oyo44krinhb" path="res://Scenes/spikes.tscn" id="11_t7v2y"]
 [ext_resource type="PackedScene" uid="uid://daw1mkvj8gksm" path="res://Scenes/lava.tscn" id="12_ait6c"]
-[ext_resource type="Script" uid="uid://bwtow4er4gh1l" path="res://Script/level3door.gd" id="13_bl0du"]
+[ext_resource type="Script" path="res://Script/level3door.gd" id="13_bl0du"]
 [ext_resource type="Texture2D" uid="uid://c1lkpfh2xf338" path="res://Assets/Decoration/0f4217a9-eb22-4a6c-a379-5eb8caef7c89-removebg-preview.png" id="14_q0ycs"]
+[ext_resource type="AudioStream" uid="uid://bqrg1ps5346om" path="res://Music/Kevin MacLeod - 8bit Dungeon Boss ♫ NO COPYRIGHT 8-bit Music [In9xTpfjorU].mp3" id="15_q0ycs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_smnlx"]
 texture = ExtResource("1_v3rpw")
@@ -450,6 +451,10 @@ texture = ExtResource("14_q0ycs")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door" unique_id=573468006]
 position = Vector2(0, -5)
 shape = SubResource("RectangleShape2D_hj5x7")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1344765304]
+stream = ExtResource("15_q0ycs")
+autoplay = true
 
 [connection signal="actived" from="button" to="blocker" method="_on_button_actived"]
 [connection signal="disabled" from="button" to="blocker" method="_on_button_disabled"]

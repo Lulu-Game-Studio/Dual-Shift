@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bec7qaa7p0w6g"
+path="res://.godot/imported/8 BIT Victory sound effect [LwZQvJrAZmE].mp3-1af27d5f34b798ea60041635f0b24953.mp3str"
+
+[deps]
+
+source_file="res://Music/8 BIT Victory sound effect [LwZQvJrAZmE].mp3"
+dest_files=["res://.godot/imported/8 BIT Victory sound effect [LwZQvJrAZmE].mp3-1af27d5f34b798ea60041635f0b24953.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://d01x8emu410uq" path="res://Scenes/Box.tscn" id="8_fx2vl"]
 [ext_resource type="PackedScene" uid="uid://caejcywjmi5p6" path="res://Scenes/SpecialWall.tscn" id="9_mqud2"]
 [ext_resource type="Script" uid="uid://blq1wk675tlxm" path="res://Script/tutorialDoor.gd" id="10_dlght"]
+[ext_resource type="AudioStream" uid="uid://bwo3w4pjtf4pr" path="res://Music/Itty Bitty 8 Bit [XBEz8s-0hnU].mp3" id="11_8i65c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1jsw"]
 texture = ExtResource("2_dlght")
@@ -598,6 +599,11 @@ texture = ExtResource("5_sgy12")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door" unique_id=364247162]
 position = Vector2(0.0009765625, 14.644775)
 shape = SubResource("RectangleShape2D_8i65c")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2108444887]
+stream = ExtResource("11_8i65c")
+volume_db = -5.0
+autoplay = true
 
 [connection signal="body_entered" from="Sign1" to="Sign1" method="_on_body_entered"]
 [connection signal="body_exited" from="Sign1" to="Sign1" method="_on_body_exited"]

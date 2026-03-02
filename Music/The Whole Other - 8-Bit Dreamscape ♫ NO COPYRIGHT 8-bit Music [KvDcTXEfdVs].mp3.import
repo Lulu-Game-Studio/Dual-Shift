@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://8662iepfa7mw"
+path="res://.godot/imported/The Whole Other - 8-Bit Dreamscape ♫ NO COPYRIGHT 8-bit Music [KvDcTXEfdVs].mp3-4ed2f3bf5e391bc274f44ec5ff1a57b8.mp3str"
+
+[deps]
+
+source_file="res://Music/The Whole Other - 8-Bit Dreamscape ♫ NO COPYRIGHT 8-bit Music [KvDcTXEfdVs].mp3"
+dest_files=["res://.godot/imported/The Whole Other - 8-Bit Dreamscape ♫ NO COPYRIGHT 8-bit Music [KvDcTXEfdVs].mp3-4ed2f3bf5e391bc274f44ec5ff1a57b8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

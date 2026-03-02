@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqxq5v7po52lj"
+path="res://.godot/imported/Pause Theme - FNF_ Gumballs OST [EzAUg7h1HYI].mp3-3dfb3d12ed7fd9f092d5d03dd17fb5b2.mp3str"
+
+[deps]
+
+source_file="res://Music/Pause Theme - FNF_ Gumballs OST [EzAUg7h1HYI].mp3"
+dest_files=["res://.godot/imported/Pause Theme - FNF_ Gumballs OST [EzAUg7h1HYI].mp3-3dfb3d12ed7fd9f092d5d03dd17fb5b2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
