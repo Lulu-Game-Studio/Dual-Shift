@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://caejcywjmi5p6" path="res://Scenes/SpecialWall.tscn" id="9_mqud2"]
 [ext_resource type="Script" uid="uid://blq1wk675tlxm" path="res://Script/tutorialDoor.gd" id="10_dlght"]
 [ext_resource type="AudioStream" uid="uid://bwo3w4pjtf4pr" path="res://Music/Itty Bitty 8 Bit [XBEz8s-0hnU].mp3" id="11_8i65c"]
-[ext_resource type="PackedScene" path="res://Scenes/pause.tscn" id="12_m35rq"]
+[ext_resource type="PackedScene" uid="uid://bhit7ikjhomco" path="res://Scenes/pause.tscn" id="12_m35rq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1jsw"]
 texture = ExtResource("2_dlght")
@@ -304,6 +304,7 @@ tile_map_data = PackedByteArray("AAAAAAAAAAAAAAkAAAAAAAEAAAAAAAkAAAAAAAIAAAAAAAk
 tile_set = SubResource("TileSet_1kog2")
 
 [node name="Sign1" type="Area2D" parent="." unique_id=1274054936]
+collision_mask = 3
 script = ExtResource("3_8i65c")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sign1" unique_id=866617894]
@@ -338,6 +339,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Sign2" type="Area2D" parent="." unique_id=678321200]
+collision_mask = 3
 script = ExtResource("3_8i65c")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sign2" unique_id=412696204]
@@ -375,6 +377,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Sign3" type="Area2D" parent="." unique_id=1446650598]
+collision_mask = 3
 script = ExtResource("3_8i65c")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sign3" unique_id=1258720511]
@@ -409,6 +412,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Sign4" type="Area2D" parent="." unique_id=1464025553]
+collision_mask = 3
 script = ExtResource("3_8i65c")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sign4" unique_id=1848639772]
@@ -443,6 +447,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Sign5" type="Area2D" parent="." unique_id=1858473624]
+collision_mask = 3
 script = ExtResource("3_8i65c")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sign5" unique_id=1482486373]
@@ -488,6 +493,7 @@ position = Vector2(1142, 335)
 shape = SubResource("RectangleShape2D_43uqb")
 
 [node name="Sign6" type="Area2D" parent="." unique_id=1659092137]
+collision_mask = 3
 script = ExtResource("3_8i65c")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sign6" unique_id=2072673489]
@@ -525,6 +531,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Sign7" type="Area2D" parent="." unique_id=173892638]
+collision_mask = 3
 script = ExtResource("3_8i65c")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sign7" unique_id=1868635961]

@@ -469,6 +469,7 @@ autoplay = true
 visible = false
 
 [node name="Sign7" type="Area2D" parent="." unique_id=909613165]
+collision_mask = 3
 script = ExtResource("17_fhuy1")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sign7" unique_id=1962353163]
