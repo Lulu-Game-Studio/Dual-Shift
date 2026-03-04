@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dp814ucdjc6b5" path="res://Assets/Decoration/world_tileset.png" id="1_5ms4e"]
 [ext_resource type="Script" uid="uid://c1l643ylwkc31" path="res://Script/Swap.gd" id="1_ujyaq"]
-[ext_resource type="PackedScene" uid="uid://drsshqa2e4hvk" path="res://Scenes/Lulu.tscn" id="2_shgkq"]
+[ext_resource type="PackedScene" uid="uid://drsshqa2e4hvk" path="res://Scenes/lulu.tscn" id="2_shgkq"]
 [ext_resource type="PackedScene" uid="uid://dmviqwfdvjfv2" path="res://Scenes/wilson.tscn" id="3_shgkq"]
 [ext_resource type="FontFile" uid="uid://cv4d188et3whd" path="res://Assets/Fonts/PixelOperator8.ttf" id="4_43uqb"]
 [ext_resource type="Texture2D" uid="uid://c1lkpfh2xf338" path="res://Assets/Decoration/0f4217a9-eb22-4a6c-a379-5eb8caef7c89-removebg-preview.png" id="5_5q7gb"]

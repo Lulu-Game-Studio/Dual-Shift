@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c1l643ylwkc31" path="res://Script/Swap.gd" id="1_1q6tm"]
 [ext_resource type="Texture2D" uid="uid://dp814ucdjc6b5" path="res://Assets/Decoration/world_tileset.png" id="1_v3rpw"]
 [ext_resource type="PackedScene" uid="uid://ch1wqn8mewjit" path="res://Scenes/blocker.tscn" id="3_2mgoq"]
-[ext_resource type="PackedScene" uid="uid://drsshqa2e4hvk" path="res://Scenes/Lulu.tscn" id="3_v36qu"]
+[ext_resource type="PackedScene" uid="uid://drsshqa2e4hvk" path="res://Scenes/lulu.tscn" id="3_v36qu"]
 [ext_resource type="PackedScene" uid="uid://dmviqwfdvjfv2" path="res://Scenes/wilson.tscn" id="4_cggpd"]
 [ext_resource type="PackedScene" uid="uid://d01x8emu410uq" path="res://Scenes/Box.tscn" id="5_v36qu"]
 [ext_resource type="PackedScene" uid="uid://caejcywjmi5p6" path="res://Scenes/SpecialWall.tscn" id="6_cggpd"]
@@ -465,10 +465,6 @@ autoplay = true
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=677359532]
 
 [node name="Pause" parent="CanvasLayer" unique_id=1435016436 instance=ExtResource("16_hj5x7")]
-offset_left = -1200.0
-offset_top = 11.0
-offset_right = -1200.0
-offset_bottom = 11.0
 
 [node name="Sign7" type="Area2D" parent="." unique_id=909613165]
 script = ExtResource("17_fhuy1")

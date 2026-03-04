@@ -5,13 +5,13 @@
 [ext_resource type="Script" uid="uid://daskkl72v6o5x" path="res://Script/sign.gd" id="3_8i65c"]
 [ext_resource type="FontFile" uid="uid://cv4d188et3whd" path="res://Assets/Fonts/PixelOperator8.ttf" id="4_m35rq"]
 [ext_resource type="Texture2D" uid="uid://c1lkpfh2xf338" path="res://Assets/Decoration/0f4217a9-eb22-4a6c-a379-5eb8caef7c89-removebg-preview.png" id="5_sgy12"]
-[ext_resource type="PackedScene" uid="uid://drsshqa2e4hvk" path="res://Scenes/Lulu.tscn" id="6_5gw1s"]
+[ext_resource type="PackedScene" uid="uid://drsshqa2e4hvk" path="res://Scenes/lulu.tscn" id="6_5gw1s"]
 [ext_resource type="PackedScene" uid="uid://dmviqwfdvjfv2" path="res://Scenes/wilson.tscn" id="7_brn58"]
 [ext_resource type="PackedScene" uid="uid://d01x8emu410uq" path="res://Scenes/Box.tscn" id="8_fx2vl"]
 [ext_resource type="PackedScene" uid="uid://caejcywjmi5p6" path="res://Scenes/SpecialWall.tscn" id="9_mqud2"]
 [ext_resource type="Script" uid="uid://blq1wk675tlxm" path="res://Script/tutorialDoor.gd" id="10_dlght"]
 [ext_resource type="AudioStream" uid="uid://bwo3w4pjtf4pr" path="res://Music/Itty Bitty 8 Bit [XBEz8s-0hnU].mp3" id="11_8i65c"]
-[ext_resource type="PackedScene" uid="uid://bhit7ikjhomco" path="res://Scenes/pause.tscn" id="12_m35rq"]
+[ext_resource type="PackedScene" path="res://Scenes/pause.tscn" id="12_m35rq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1jsw"]
 texture = ExtResource("2_dlght")
